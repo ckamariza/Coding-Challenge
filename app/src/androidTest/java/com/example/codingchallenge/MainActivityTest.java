@@ -1,6 +1,5 @@
 package com.example.codingchallenge;
 
-
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
@@ -75,6 +74,11 @@ public class MainActivityTest {
                 parentMatcher.describeTo(description);
             }
 
+            /**
+             * Test function
+             * @param view
+             * @return
+             */
             @Override
             public boolean matchesSafely(View view) {
                 ViewParent parent = view.getParent();
